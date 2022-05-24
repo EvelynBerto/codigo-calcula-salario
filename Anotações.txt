@@ -1,0 +1,1 @@
+Código fonte recebe dados de entrada do tipo double, retornando o desconto em double e salário líquido
