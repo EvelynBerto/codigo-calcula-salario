@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner leia=new Scanner(System.in);
+        double VlHora;
+        double HorasTb;
+        double PercDesc;
+        double Salario;
+        double SalDesconto;
+        System.out.println("Qual o valor da hora trabalhada?");
+        VlHora = leia.nextDouble();
+        System.out.println("Quantas horas você trabalhou?");
+        HorasTb = leia.nextDouble();
+        Salario = VlHora*HorasTb;
+        System.out.println("Salário bruto: R$" + Salario);
+        System.out.println("Qual a porcentagem de desconto do INSS? (Somente número)");
+        PercDesc = leia.nextDouble();
+        SalDesconto = Salario*(PercDesc/100);
+        System.out.println("O valor do desconto do INSS será: R$" + SalDesconto);
+        System.out.println("O valor líquido final do seu salário será: R$" +  (Salario-SalDesconto));
+	}
+}
